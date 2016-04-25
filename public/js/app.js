@@ -16,10 +16,7 @@ socket.on('connect', function () {
 // recives the message and display it
 socket.on('message', function (message) {
 	var momentTimestamp = moment.utc(message.timestamp);	
-	/*
-
-
-	console.log('new message');
+	/*console.log('new message');
 	console.log(message.text);
 	jQuery('.messages').
 	append('<h3>'+ message.name +'</h3><p>' + momentTimeStamp
